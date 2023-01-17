@@ -32,23 +32,18 @@ function NavBar() {
         activeKey="/home"
         onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
-        
+    
         <Nav.Item>
-        <Nav.Link href="/home" className= {activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('home')} >Home</Nav.Link>
+            <Nav.Link href= "/about" eventKey="About Me" className= {activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('about')}>About Me</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link href= "/about" eventKey="About Me" className= {activeLink === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('about')}>About Me</Nav.Link>
+            <Nav.Link href= "/portfolio" eventKey="portfolio" className= {activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('portfolio')}>Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link href= "/portfolio" eventKey="portfolio" className= {activeLink === 'portfolio' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('portfolio')}>Portfolio</Nav.Link>
+            <Nav.Link href= "/contact" eventKey="contact" className= {activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('portfolio')}> Contact </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-        <Nav.Link href= "/resume" eventKey="resume" className= {activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('resume')}>Resume</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-        <button className= "" onClick={()=> console.log ('Connect')}> 
-            <span> Let's Connect </span> 
-        </button>
+            <Nav.Link href= "/resume" eventKey="resume" className= {activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink ('resume')}>Resume</Nav.Link>
         </Nav.Item>
 
     </Nav>
