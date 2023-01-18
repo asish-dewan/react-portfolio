@@ -53,3 +53,10 @@ const header = {
         livePreview: 'https://asish-dewan.github.io/code_quiz/',
     },
     ]
+
+    // change contact to FORM type
+    const contact = {
+        email: 'asish3110@gmail.com',
+    }
+
+export { header, about, projects, contact}
